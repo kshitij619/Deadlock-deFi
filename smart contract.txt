@@ -1,0 +1,33 @@
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.0;
+
+contract LendingPlatform {
+    // Define a struct to represent a loan
+    struct Loan {
+        address borrower;
+        uint256 amount;
+        uint256 collateral;
+        bool active;
+    }
+
+    // Mapping to store loans
+    mapping(address => Loan) public loans;
+
+    // Event to notify when a loan is initiated
+    event LoanInitiated(address indexed borrower, uint256 amount, uint256 collateral);
+
+    // Function to initiate a loan
+    function initiateLoan(uint256 _amount, uint256 _collateral) external {
+        require(loans[msg.sender].active == false, "You already have an active loan.");
+        loans[msg.sender] = Loan(msg.sender, _amount, _collateral, true);
+        emit LoanInitiated(msg.sender, _amount, _collateral);
+    }
+
+    // Function to repay a loan
+    function repayLoan() external payable {
+        require(loans[msg.sender].active == true, "No active loan to repay.");
+        require(msg.value == loans[msg.sender].amount, "Incorrect repayment amount.");
+        payable(msg.sender).transfer(loans[msg.sender].collateral);
+        loans[msg.sender].active = false;
+    }
+}
