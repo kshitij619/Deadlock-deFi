@@ -1,14 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
-    <title>Deadlock</title>
+    <title>Money Pool</title>
 </head>
-
 <body>
+
+
+
+    <!-- header -->
+
+
+
     <header class="bg-gradient-to-r from-gray-900 to-gray-700 text-white">
         <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
             <a class="flex title-font font-medium items-center text-white mb-4 md:mb-0">
@@ -29,120 +34,40 @@
     </header>
 
 
+    <!-- Main Body -->
 
-    <!-- side bar  -->
 
-    <div class="flex">
-        <!-- Sidebar -->
-        <div class="w-1/4 h-screen bg-gray-800 text-white p-4 sticky top-0">
-            <!-- Sidebar content goes here -->
-            Filters
-            <hr>
-            <div class="w-1/2 p-4">
-                <h2 class="text-xl text-white mb-4">Listing Types</h2>
-                <div class="flex items-center mb-2">
-                    <input type="checkbox" id="borrow" class="mr-2">
-                    <label for="borrow" class="text-white">Borrow</label>
-                </div>
-                <div class="flex items-center mb-2">
-                    <input type="checkbox" id="lend" class="mr-2">
-                    <label for="lend" class="text-white">Lend</label>
-                </div>
+
+
+    <section class="bg-gradient-to-r from-gray-900 to-gray-700">
+        <div class="container px-5 py-24 mx-auto flex flex-wrap" bis_skin_checked="1">
+          <div class="flex flex-wrap -mx-4 mt-auto mb-auto lg:w-1/2 sm:w-2/3 content-start sm:pr-10" bis_skin_checked="1">
+            <div class="w-full sm:p-4 px-4 mb-6" bis_skin_checked="1">
+              <h1 class="title-font font-medium text-5xl mb-2 text-white">Financial Infrastructure 
+                For Builders To Create Web3</h1>
+              <h1 class="title-font font-medium text-4xl mb-2 text-indigo-500">Invoicing products</h1>
             </div>
-
-
-
-
-
-            <div class="w-full p-4">
-                <h2 class="text-xl text-white mb-4">Pricing</h2>
-                <div class="flex items-center mb-2">
-                    <label for="min" class="text-white mr-2">₹</label>
-                    <input type="text" id="min" placeholder="Minimum" class="bg-gray-700 text-white px-2 py-1 rounded w-full" oninput="this.value = this.value.replace(/[^0-9]/g, '')">
-                    <span class="text-white mx-2">-</span>
-                    <input type="text" id="max" placeholder="Maximum" class="bg-gray-700 text-white px-2 py-1 rounded w-full" oninput="this.value = this.value.replace(/[^0-9]/g, '')">
-                </div>
-            </div>
+          </div>
+          <div class="lg:w-1/2 sm:w-1/3 w-full rounded-lg overflow-hidden mt-6 sm:mt-0" bis_skin_checked="1">
 
 
             
-        </div>
-    </div>
+            <!-- here -->
 
 
-    <!-- Main section -->
-
-    <section class="px-4 py-12 mx-auto md:max-w-6xl">
-        <div class="flex flex-wrap -mx-4">
-      
-          <a href="#" class="w-full md:w-1/2 lg:w-1/3 px-4 mb-8">
-            <div class="relative flex flex-col items-start transition duration-300 ease-in-out transform bg-white shadow-2xl rounded-xl hover:translate-y-1">
-              <div class="p-6">
-                <h4 class="mt-4 text-2xl font-semibold text-neutral-600">Borrow</h4>
-                <p class="mt-4 text-base font-normal text-gray-500 leading-relaxed">Amount: ₹100000</p>
-
-              </div>
-            </div>
-          </a>
-
-
-          <a href="#" class="w-full md:w-1/2 lg:w-1/3 px-4 mb-8">
-            <div class="relative flex flex-col items-start transition duration-300 ease-in-out transform bg-white shadow-2xl rounded-xl hover:translate-y-1">
-              <div class="p-6">
-                <h4 class="mt-4 text-2xl font-semibold text-neutral-600">Lend</h4>
-                <p class="mt-4 text-base font-normal text-gray-500 leading-relaxed">Amount: ₹54000</p>
-              </div>
-            </div>
-          </a>
-
-
-          <a href="#" class="w-full md:w-1/2 lg:w-1/3 px-4 mb-8">
-            <div class="relative flex flex-col items-start transition duration-300 ease-in-out transform bg-white shadow-2xl rounded-xl hover:translate-y-1">
-              <div class="p-6">
-                <h4 class="mt-4 text-2xl font-semibold text-neutral-600">Lend</h4>
-                <p class="mt-4 text-base font-normal text-gray-500 leading-relaxed">Amount: ₹96000</p>
-              </div>
-            </div>
-          </a>
-
-
-          <a href="#" class="w-full md:w-1/2 lg:w-1/3 px-4 mb-8">
-            <div class="relative flex flex-col items-start transition duration-300 ease-in-out transform bg-white shadow-2xl rounded-xl hover:translate-y-1">
-              <div class="p-6">
-                <h4 class="mt-4 text-2xl font-semibold text-neutral-600">Borrow</h4>
-                <p class="mt-4 text-base font-normal text-gray-500 leading-relaxed">Amount: ₹150000</p>
-
-              </div>
-            </div>
-          </a>
-
-
-          <a href="#" class="w-full md:w-1/2 lg:w-1/3 px-4 mb-8">
-            <div class="relative flex flex-col items-start transition duration-300 ease-in-out transform bg-white shadow-2xl rounded-xl hover:translate-y-1">
-              <div class="p-6">
-                <h4 class="mt-4 text-2xl font-semibold text-neutral-600">Borrow</h4>
-                <p class="mt-4 text-base font-normal text-gray-500 leading-relaxed">Amount: ₹600000</p>
-
-              </div>
-            </div>
-          </a>
-      
-      
-      
-          <!-- Repeat the above structure for other entries -->
-      
+          </div>
         </div>
       </section>
-      
 
 
-    
 
-
-    <!-- footer  -->
+      <!-- footer  -->
 
 
     <footer class="bg-gradient-to-r from-gray-900 to-gray-700">
+
+
+
         <section class="bg-gradient-to-r from-gray-900 to-gray-700">
             <div class="container mx-auto">
                 <!-- Grid row -->
@@ -202,7 +127,9 @@
 
 
     </footer>
-    <!-- <script src="./home.js"></script> -->
-</body>
 
+
+
+
+</body>
 </html>
