@@ -65,12 +65,23 @@
             
             
             <div class="w-full p-4">
-                <h2 class="text-xl text-white mb-4">Pricing</h2>
+                <h2 class="text-xl text-white mb-4">Sending Money</h2>
+
+
                 <div class="flex items-center mb-2">
-                    <label for="min" class="text-white mr-2">₹</label>
-                    <input type="text" id="min" placeholder="Minimum" class="bg-gray-700 text-white px-2 py-1 rounded w-full" oninput="this.value = this.value.replace(/[^0-9]/g, '')">
-                    <span class="text-white mx-2">-</span>
-                    <input type="text" id="max" placeholder="Maximum" class="bg-gray-700 text-white px-2 py-1 rounded w-full" oninput="this.value = this.value.replace(/[^0-9]/g, '')">
+                    <label for="min" class="text-white mr-2">Receiver: </label>
+                    <input type="text" id="min" placeholder="Address" class="bg-gray-700 text-white px-2 py-1 rounded w-full">
+
+                </div>
+
+                <div class="flex items-center mb-2">
+                    <label for="min" class="text-white mr-2">Amount: </label>
+                    <input type="text" id="min" placeholder="Amount" class="bg-gray-700 text-white px-2 py-1 rounded w-full" oninput="this.value = this.value.replace(/[^0-9]/g, '')">
+                </div>
+
+
+                <div class="flex items-center mb-2 py-4">
+                    <input type="text" id="min" placeholder="Description" class="bg-gray-700 text-white px-2 py-1 rounded w-full"   >
                 </div>
             </div>
             
@@ -326,7 +337,7 @@
 
 
     </footer>
-    <!-- <script src="./home.js"></script> -->
+    <!-- <script src="./home.js"></script> --><script src="metamask.js"></script>
 </body>
 
 </html>
